@@ -1,3 +1,28 @@
 [gd_scene format=3 uid="uid://de8uqeenqhggm"]
 
 [node name="Ui" type="CanvasLayer"]
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TopBar" type="HBoxContainer" parent="Root"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Coins" type="Label" parent="Root/TopBar"]
+layout_mode = 2
+text = "Coins : 0"
+
+[node name="UpgradeBtn" type="Button" parent="Root/TopBar"]
+layout_mode = 2
+text = "Scythe Edge + 10%"
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

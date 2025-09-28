@@ -1,3 +1,12 @@
-[gd_scene format=3 uid="uid://xvqhqrld3ymf"]
+[gd_scene load_steps=3 format=3 uid="uid://xvqhqrld3ymf"]
+
+[ext_resource type="PackedScene" uid="uid://besl1raukmg85" path="res://scenes/Reaper.tscn" id="1_rvslj"]
+[ext_resource type="PackedScene" uid="uid://de8uqeenqhggm" path="res://scenes/UI.tscn" id="2_0bbpv"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Crowd" type="Node2D" parent="."]
+
+[node name="Reaper" parent="." instance=ExtResource("1_rvslj")]
+
+[node name="Ui" parent="." instance=ExtResource("2_0bbpv")]
